@@ -177,7 +177,7 @@ int main(int argc, char *argv[]) {
   debug = TRUE;  //Output Debug Info
   gencmt = TRUE; //Generate Assembly Language Comments
   
-  printf("C02 Compiler (C) 2012 Curtis F Kaylor\n" );
+  printf("C02 Compiler CA65 version (C) 2012 Curtis F Kaylor\n" );
 
   init(); //Initialize Global Variables
   
