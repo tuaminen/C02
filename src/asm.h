@@ -8,3 +8,4 @@ void asmlin(char *opcode, char *oprnd); //Output a line of assembly code
 void cmtlin();          //Output a comment lines
 void prccmt();          //Process comment
 void writeexport(char *name); //PT
+void writeline(char *text); //PT

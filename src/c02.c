@@ -86,6 +86,10 @@ void prolog(void) {
   setcmt("Program ");
   addcmt(srcnam);
   cmtlin();
+    
+  writeline(".define EQU     ="); //PT
+  writeline(".define DC     .byte"); //PT
+
 }
 
 void epilog(void) {

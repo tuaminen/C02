@@ -39,3 +39,8 @@ void writeexport(char* name) { //PT
   DEBUG("Writing export %s\n", name)
   fprintf(outfil, ".export %s\n", name);	
 }
+
+void writeline(char *text) { //PT
+  DEBUG("Writing line %s\n", text)
+  fprintf(outfil, "%s\n", text);	
+}
