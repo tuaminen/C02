@@ -82,7 +82,7 @@ void pdrctv(void) {
 
 void prolog(void) {
   DEBUG("Writing Assembly Prolog\n", 0)
-  asmlin(CPUOP,CPUARG);
+//  asmlin(CPUOP,CPUARG); //PT
   setcmt("Program ");
   addcmt(srcnam);
   cmtlin();
