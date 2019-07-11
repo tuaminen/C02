@@ -4,22 +4,22 @@
 
 #define FNAMLEN 255       //Maximum File Name Length
 #define LINELEN 255       //Maximum Input/Output Line Length
-#define CONLEN 6          //Maximum Constant Name Length
+#define CONLEN 32          //Maximum Constant Name Length //PT
 #define MAXCON 255        //Maximum Number of Constants
-#define STCLEN 6          //Maximum Struct Name Length
+#define STCLEN 32          //Maximum Struct Name Length //PT
 #define MAXSTC 32         //Maximum Number of Stuctures
-#define STMLEN 6          //Maximum Struct Member Name Length
+#define STMLEN 32          //Maximum Struct Member Name Length //PT
 #define MAXSTM 255        //Maximum Number of Stucture Members
-#define VARLEN 6          //Maximum Variable Name Length
+#define VARLEN 32          //Maximum Variable Name Length //PT
 #define MAXVAR 255        //Maximum Number of Variables
 #define MAXTRM 16         //Maximum Terms in Stack
 #define DATASPC 4096      //Space to Allocate for Variable Data
 #define SUBMAX 4          //Maximum Number of Sub Directories
 
-#define LABLEN 6          //Maximum Program Label Length
+#define LABLEN 32          //Maximum Program Label Length //PT
 #define MAXLAB 255        //Maximum Number of Program Labels
 
-#define LBLLEN 6          //Maximum Label Length
+#define LBLLEN 32          //Maximum Label Length //PT
 #define LBLFMT "L_%04d"   //Label Format
 #define LABSFX ":"        //Label Suffix
 #define MAXLBL 15         //Maximum Number of Labels (Nesting Depth)
