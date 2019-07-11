@@ -33,7 +33,7 @@ int addprm(char* prmtr) {
 void addfnc(void) {
   if (infunc) ERROR("Nested Function Definitions Not Allowed\n", 0, EXIT_FAILURE)
   expect('(');
-  strcpy(fncnam, word);   //Save Function Name
+  strcpy(fncnam, word_orig);   //Save Function Name //PT
   prmtra[0] = 0;          //Initialze Parameters
   prmtry[0] = 0;
   prmtrx[0] = 0;

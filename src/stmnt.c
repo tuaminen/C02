@@ -455,7 +455,7 @@ void punimp(void) {
 
 /* Parse Function Call as Statement */
 void prsfns(void) {
-  strcpy(term, word);  //Copy Function Name
+  strcpy(term, word_orig);  //Copy Function Name //PT
   prsfnc(';');            //Parse Function Call
   return;
 }

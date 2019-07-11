@@ -133,9 +133,17 @@ void getwrd(void) {
   wrdlen = 0;
   skpspc();
   if (!isalph()) expctd("Alphabetic Character");
-  while (isanum()) word[wrdlen++] = toupper(getnxt());
+  
+  while (isanum()) {
+	  char n = getnxt(); //PT	  
+	  word[wrdlen] = toupper( n ); //PT
+	  word_orig[wrdlen] = n; //PT
+	  wrdlen++;
+  }
+  
+  word_orig[wrdlen] = 0;
   word[wrdlen] = 0;
-  ACMNT(word);
+  ACMNT(word_orig); //PT
 }
 
 /* Escape Character */

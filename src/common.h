@@ -64,7 +64,10 @@ int savchr; //Holds nxtchr when switching input files
 
 int  wrdlen;          //Length of Parsed Word
 char word[LINELEN];   //Word parsed from source file
-char uword[LINELEN];  //Word converted to uppercase
+
+char word_orig[LINELEN];  //Word in original format
+
+// char uword[LINELEN];  //Word converted to uppercase //PT: Not used
 char cmtasm[LINELEN]; //Assembly Language Comment Text
 
 char hdrnam[FNAMLEN]; //Header File Name
