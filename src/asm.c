@@ -34,3 +34,8 @@ void cmtlin(void) {
   fprintf(outfil, "; %s\n", cmtasm);
   setcmt("");
 }
+
+void writeexport(char* name) { //PT
+  DEBUG("Writing export %s\n", name)
+  fprintf(outfil, ".export %s\n", name);	
+}

@@ -455,7 +455,8 @@ void punimp(void) {
 
 /* Parse Function Call as Statement */
 void prsfns(void) {
-  strcpy(term, word_orig);  //Copy Function Name //PT
+  strcpy(term, "_"); //PT: add underscore to function names for exporting
+  strcat(term, word_orig);  //Copy Function Name //PT
   prsfnc(';');            //Parse Function Call
   return;
 }

@@ -33,7 +33,8 @@ int addprm(char* prmtr) {
 void addfnc(void) {
   if (infunc) ERROR("Nested Function Definitions Not Allowed\n", 0, EXIT_FAILURE)
   expect('(');
-  strcpy(fncnam, word_orig);   //Save Function Name //PT
+  strcpy(fncnam, "_"); //PT: add underscore to function names for exporting
+  strcat(fncnam, word_orig);   //Save Function Name //PT
   prmtra[0] = 0;          //Initialze Parameters
   prmtry[0] = 0;
   prmtrx[0] = 0;
@@ -52,6 +53,9 @@ void addfnc(void) {
   if (look(';')) return;    //Forward Definition
   infunc = TRUE;          //Set Inside Function Definition Flag
   DEBUG("Set infunc to %d\n", infunc)
+  
+  writeexport(fncnam); //PT
+  
   setlbl(fncnam);         //Set Function Entry Point
   if (prmtra[0]) asmlin("STA", prmtra); //Store First Parameter
   if (prmtry[0]) asmlin("STY", prmtry); //Store Second Parameter
