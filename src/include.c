@@ -266,7 +266,7 @@ void pincfl(void) {
   }
   if (strcmp(dot, ".a02") == 0) 
     incasm(TRUE);
-  if (strcmp(dot, ".asm") == 0) 
+  if (strcmp(dot, ".asm") == 0 || strcmp(dot, ".s") == 0) 
     incasm(TRUE);
   else if (strcmp(dot, ".h02") == 0) { 
     inchdr(TRUE);  //Process Header File

@@ -44,7 +44,7 @@ void opnout(void) {
     if (dot != NULL) *dot = 0;          //and remove it
     DEBUG("Set Output File Name to '%s'\n", outnam)
   } 
-  if (strrchr(outnam, '.') == NULL) strcat(outnam, ".asm"); //if no extension, add ".asm"
+  if (strrchr(outnam, '.') == NULL) strcat(outnam, ".s"); //if no extension, add ".s"
   DEBUG("Opening Output File '%s'\n", outnam)
   outfil = fopen(outnam, "w");      //open file
   if (outfil == NULL) extsys(outnam);
